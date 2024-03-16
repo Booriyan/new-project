@@ -1,0 +1,198 @@
+.sidebarIcon {
+  height: 920px;
+  width: 88px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  object-fit: cover;
+}
+.frameChild {
+  height: 802px;
+  width: 802px;
+  position: absolute;
+  margin: 0 !important;
+  bottom: -712px;
+  left: 90px;
+  border-radius: 50%;
+  background-color: var(--color-violet);
+  filter: blur(970px);
+}
+.frameInner,
+.frameItem {
+  position: relative;
+  border-radius: var(--br-35xl);
+  display: none;
+  max-width: 100%;
+}
+.frameItem {
+  height: 74px;
+  width: 1006px;
+  background-color: var(--color-gray-400);
+}
+.frameInner {
+  height: 58px;
+  width: 981px;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+}
+.blackTShirt,
+.groupIcon {
+  position: relative;
+  z-index: 2;
+}
+.groupIcon {
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+}
+.blackTShirt {
+  align-self: stretch;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+.blackTShirtUnder300Wrapper {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 var(--padding-11xs);
+}
+.blackTShirtUnder300Wrapper,
+.frameParent,
+.frameWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: var(--gap-3xs);
+}
+.frameWrapper {
+  height: 31px;
+  width: 174px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+}
+.frame {
+  align-self: stretch;
+  width: 102px;
+  z-index: 2;
+}
+.rectangleGroup,
+.rectangleParent {
+  flex: 1;
+  border-radius: var(--br-35xl);
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.rectangleGroup {
+  align-self: stretch;
+  border: 1px solid var(--color-darkslategray-100);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-2xs) var(--padding-3xs)
+    var(--padding-2xl);
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.rectangleParent {
+  background-color: var(--color-gray-400);
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-smi) var(--padding-5xs)
+    var(--padding-xs);
+}
+.ellipseParent,
+.rectangleParent,
+.windowInner {
+  align-self: stretch;
+  flex-direction: row;
+  max-width: 100%;
+}
+.ellipseParent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.windowInner {
+  height: 74px;
+  padding: 0 77px 0 76px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-whitesmoke-300);
+  font-family: var(--font-satoshi);
+}
+.searchResults,
+.window,
+.windowInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.window {
+  height: 922px;
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-gray-900);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 51px 67px var(--padding-12xl);
+  gap: 97px;
+  max-width: 100%;
+}
+.searchResults {
+  width: 100%;
+  height: 960px;
+  position: relative;
+  background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(121, 22, 255, 0.2),
+      rgba(13, 5, 28, 0) 89.58%
+    ),
+    #000;
+  overflow-y: auto;
+  flex-direction: row;
+  padding: var(--padding-xl) var(--padding-base) var(--padding-xl)
+    var(--padding-lgi);
+  gap: var(--gap-3xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .window,
+  .windowInner {
+    padding-left: var(--padding-19xl);
+    padding-right: var(--padding-19xl);
+    box-sizing: border-box;
+  }
+  .window {
+    padding-left: var(--padding-14xl);
+    padding-right: var(--padding-14xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .window {
+    padding-top: var(--padding-14xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .window {
+    gap: 48px 97px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .window {
+    gap: 24px 97px;
+    padding-top: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,69 @@
+.trendingSmartWatches {
+  align-self: stretch;
+  height: 68px;
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+  width: 100%;
+  height: 100%;
+}
+.emailinfopraktijkspiritnlIcon {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  z-index: 1;
+}
+.ellipseParent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.frameWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.trendingSmartWatches2024Parent {
+  flex: 1;
+  border-radius: 22.09px;
+  background-color: var(--color-gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lg) var(--padding-mini) var(--padding-mini)
+    var(--padding-lg);
+  box-sizing: border-box;
+  gap: var(--gap-45xl);
+  min-width: 229px;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-satoshi);
+}
+@media screen and (max-width: 450px) {
+  .trendingSmartWatches {
+    font-size: var(--font-size-xl);
+  }
+  .trendingSmartWatches2024Parent {
+    gap: 32px 64px;
+  }
+}

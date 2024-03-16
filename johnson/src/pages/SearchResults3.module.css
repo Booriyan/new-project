@@ -1,0 +1,208 @@
+.sidebarIcon {
+  height: 923px;
+  width: 88px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  object-fit: cover;
+}
+.menCheckeredRound {
+  margin: 0;
+  width: 599px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  line-height: 45px;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.boldElectronicDevicesSmar {
+  border-radius: var(--br-4xs);
+}
+.boldElectronicDevicesSmar,
+.frameChild,
+.frameItem {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.frameItem {
+  border-radius: var(--br-4xs);
+}
+.boldElectronicDevicesSmarParent {
+  height: 333px;
+  width: 113px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10.5px;
+}
+.frameInner {
+  height: 529px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 387px;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 11px;
+}
+.frameParent,
+.menCheckeredRoundNeckCottoParent,
+.window,
+.windowInner,
+.windowWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.menCheckeredRoundNeckCottoParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 31px;
+}
+.window,
+.windowInner,
+.windowWrapper {
+  box-sizing: border-box;
+}
+.windowInner {
+  width: 784px;
+  flex-direction: row;
+  padding: 0 var(--padding-13xl);
+  flex-shrink: 0;
+}
+.window,
+.windowWrapper {
+  flex-direction: column;
+}
+.window {
+  align-self: stretch;
+  height: 922px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-gray-900);
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 48px 36px 224px;
+  gap: 101px;
+}
+.windowWrapper {
+  flex: 1;
+  padding: var(--padding-12xs) 0 0;
+  min-width: 567px;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-whitesmoke-100);
+  font-family: var(--font-satoshi);
+}
+.instanceChild {
+  position: absolute;
+  height: 6.51%;
+  width: 76.57%;
+  top: 89.91%;
+  right: 15.37%;
+  bottom: 3.58%;
+  left: 8.06%;
+  z-index: 1;
+}
+.copilotParent {
+  align-self: stretch;
+  height: 922px;
+  position: relative;
+  max-width: 100%;
+}
+.searchResults,
+.searchResultsInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.searchResultsInner {
+  width: 397px;
+  flex-direction: column;
+  padding: var(--padding-12xs) 0 0;
+  max-width: 100%;
+}
+.searchResults {
+  width: 100%;
+  position: relative;
+  background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(121, 22, 255, 0.2),
+      rgba(13, 5, 28, 0) 89.58%
+    ),
+    #000;
+  overflow-y: auto;
+  flex-direction: row;
+  padding: var(--padding-lgi) var(--padding-lgi) var(--padding-lg);
+  gap: var(--gap-3xl);
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1125px) {
+  .sidebarIcon {
+    display: none;
+  }
+  .searchResultsInner {
+    flex: 1;
+  }
+  .searchResults {
+    flex-wrap: wrap;
+    padding-left: var(--padding-3xl);
+    padding-right: var(--padding-3xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .menCheckeredRound {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .window {
+    padding-top: var(--padding-12xl);
+    padding-bottom: 146px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameInner {
+    min-width: 100%;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+  .menCheckeredRoundNeckCottoParent {
+    gap: 15px 31px;
+  }
+  .window {
+    height: auto;
+    gap: 50px 101px;
+    padding-top: var(--padding-xl);
+    padding-bottom: 95px;
+    box-sizing: border-box;
+  }
+  .windowWrapper {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menCheckeredRound {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .window {
+    gap: 25px 101px;
+  }
+}
